@@ -1,0 +1,317 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {  
+  font-family: Arial, sans-serif;
+  background: #f4f6f9;
+  color: #222;
+  line-height: 1.5;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.app-header {
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 24px 0;
+  margin-bottom: 24px;
+}
+
+.app-header h1 {
+  font-size: 2rem;
+  margin-bottom: 6px;
+}
+
+.app-header p {
+  color: #666;
+}
+
+.main-grid {  /*main part of the body 2 left 1 right*/
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.left-panel,
+.right-panel { /*column format*/
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+  margin-bottom: 16px;
+  font-size: 1.25rem;
+}
+
+.task-form { /*Task form layout*/
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.form-group { /*Each label + input pair is one form group.*/
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+.form-group input, /*styles all form boxes*/
+.form-group textarea,
+.form-group select {
+  padding: 10px 12px;
+  border: 1px solid #cfd4dc;
+  border-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.form-group input:focus, /*clicks an input box, its border becomes purple/blue.*/
+.form-group textarea:focus,
+.form-group select:focus {
+  border-color: #4f46e5;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.btn {  /*Base button style  become fade where cursor is on*/
+  border: none;
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.btn:hover { /*When the mouse is over a button, it becomes a little lighter.*/
+  opacity: 0.92;
+}
+
+.btn-primary { /*styles the main button, like Add Task.*/
+  background: #4f46e5;
+  color: #fff;
+  font-weight: bold;
+}
+
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.filter-btn {
+  background: #eef2ff;
+  color: #333;
+}
+
+.filter-btn.active {
+  background: #4f46e5;
+  color: #fff;
+}
+
+.section-header { /*Task List header.*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+#taskCount { /*“0 tasks” text*/
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.task-list,
+.schedule-list,
+.suggestion-list {  /*makes these task items schedule items suggestion items vertical lists with spacing.*/
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.task-item {
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 14px;
+  background: #fafafa;
+}
+
+.task-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.task-title {
+  font-size: 1.05rem;
+  font-weight: bold;
+}
+
+.task-description {
+  color: #555;
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+
+.task-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.badge { /*pill-shaped labels.*/
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: bold;
+}
+
+.priority-high {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.priority-medium {
+  background: #ffedd5;
+  color: #c2410c;
+}
+
+.priority-low {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.status-completed {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.status-incomplete {
+  background: #f3f4f6;
+  color: #374151;
+}
+
+.task-actions { /*for buttons like: Complete Delete*/
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btn-small { /*Makes some buttons smaller than normal.*/
+  padding: 8px 12px;
+  font-size: 0.85rem;
+}
+
+.btn-complete {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.btn-delete {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.schedule-item,
+.suggestion-item { /*styles each schedule or suggestion box.*/
+  border-radius: 12px;
+  padding: 12px;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+}
+
+.schedule-time { /*makes time text bold and gives a little space below it.*/
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.empty-message {
+  color: #777;
+  font-size: 0.95rem;
+}
+
+.completed-task {
+  opacity: 0.75;
+}
+
+.completed-task .task-title {
+  text-decoration: line-through;
+}
+
+/* Force 24-hour format on time inputs */
+/*input[type="time"]::-webkit-datetime-edit-ampm-field {
+  display: none;
+}*/
+
+
+@media (max-width: 900px) {
+  .main-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .task-top {
+    flex-direction: column;
+  }
+}
+
+/*
+display: grid; → makes columns
+display: flex; → arranges items in a row or column
+display: flex; → turns the container into a flexbox
+flex-direction → decides how children are placed [1][2][3]
+
+
+gap → space between items
+padding → space inside a box
+margin → space outside a box
+border-radius → rounded corners
+box-shadow → soft shadow
+
+
+align-items: flex-start →　Align items at the start of the cross axis
+grid-template-columns = “Decide how many columns you have and how wide each one is”
+
+
+@media → changes style for smaller screens for phone
+
+*/

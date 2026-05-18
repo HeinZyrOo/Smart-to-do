@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart To-Do App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="app-header">  <!-- title -->
+    <div class="container">
+      <h1>Smart To-Do App</h1>
+      <p>Plan your tasks and manage your time</p>
+    </div>
+  </header>
+
+  <main class="container main-grid">  <!-- main layout -->
+    <!-- Left side -->
+    <section class="left-panel"> <!-- Add new task Layout  -->
+      <div class="card"> 
+        <h2>Add New Task</h2>
+        <form id="taskForm" class="task-form">
+          <div class="form-group">
+            <label for="title">Task Title</label>   <!-- task title box -->
+            <input type="text" id="title" placeholder="Enter task title" required />
+          </div>
+
+          <div class="form-group">
+            <label for="description">Description</label> <!-- description box -->
+            <textarea id="description" rows="3" placeholder="Enter task description"></textarea>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="date">Date</label>  <!--Date box -->
+              <input type="date" id="date" required />
+            </div>
+
+            <div class="form-group">
+              <label for="priority">Priority</label>  <!--Priority box -->
+              <select id="priority" required>
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="startTime">Start Time</label>  <!--Start time box -->
+              <input type="time" id="startTime" step="60" required />
+            </div>
+
+            <div class="form-group">
+              <label for="endTime">End Time</label>  <!-- end time box -->
+              <input type="time" id="endTime" step="60" required />
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Add Task</button>  <!--Add buttonbox -->
+        </form>
+      </div>
+
+      <div class="card">   <!-- Filter Section Layout-->
+        <h2>Filters</h2>
+        <div class="filter-buttons">
+          <button class="btn filter-btn active" data-filter="all">All</button>
+          <button class="btn filter-btn" data-filter="completed">Completed</button>
+          <button class="btn filter-btn" data-filter="incomplete">Incomplete</button>
+          <button class="btn filter-btn" data-filter="High">High Priority</button>
+          <button class="btn filter-btn" data-filter="Medium">Medium Priority</button>
+          <button class="btn filter-btn" data-filter="Low">Low Priority</button>
+        </div>
+      </div>
+
+      <div class="card"> <!--Task list Layout -->
+        <div class="section-header">
+          <h2>Task List</h2>
+          <span id="taskCount">0 tasks</span>
+        </div>
+        <div id="taskList" class="task-list">
+          <p class="empty-message">No tasks yet. Add your first task.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Right side -->
+    <aside class="right-panel"> <!-- Today Schedule Layout -->
+      <div class="card">
+        <h2>Today’s Schedule</h2>
+        <div id="todaySchedule" class="schedule-list">
+          <p class="empty-message">No tasks scheduled for today.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>AI Productivity Coach</h2>
+
+        <button id="aiSuggestBtn" class="btn btn-primary" type="button">
+          Generate AI Advice
+        </button>
+
+        <div id="suggestions" class="suggestion-list">
+        <p class="empty-message">AI advice will appear here.</p>
+        </div>
+      </div>
+      
+
+
+    </aside>
+  </main>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
+
+
+<!--
+Important IDs
+taskForm → the form
+title → task title input
+description → description input
+date → date input
+priority → priority dropdown
+startTime → start time input
+endTime → end time input
+taskCount → shows number of tasks
+taskList → where tasks are displayed
+todaySchedule → where today’s tasks are displayed
+suggestions → where suggestions are displayed
+-->
