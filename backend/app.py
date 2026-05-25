@@ -26,7 +26,7 @@ CORS(app)
 
 # Connect Flask backend to Firebase
 # serviceAccountKey.json must be inside the backend folder
-cred = credentials.Certificate("backend/serviceAccountKey.json")
+cred = credentials.Certificate("serviceAccountKey.json")
 firebase_admin.initialize_app(cred)
 
 # Create Firestore database object
