@@ -125,8 +125,8 @@ The backend sends task data to Gemini API using Flask
 |---|---|---|
 | GET | /tasks | Get all tasks |
 | POST | /tasks | Create new task |
-| PUT | /tasks/<id> | Update task |
-| DELETE | /tasks/<id> | Delete task |
+| PUT | /tasks/ <id> | Update task |
+| DELETE | /tasks/ <id> | Delete task |
 | POST | /ai-suggestions | Generate AI advice |
 
 Backend implementation is written using Flask REST API architecture.
