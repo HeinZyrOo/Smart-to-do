@@ -2,7 +2,7 @@ import os
 import json
 from google import genai
 from flask import Flask, request, jsonify
-from flask_cors import CORS
+from flask_cors import CORS#library that allows your frontend and backend to communicate on different domains.
 import firebase_admin
 from firebase_admin import credentials, firestore
 
