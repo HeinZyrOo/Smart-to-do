@@ -205,7 +205,9 @@ Through this project, I learned:
 
 ## Author
 
-Hein Zayar Oo　| 日本工学院八王子専門学校(ITカレッジ　情報処理科) | 東京工科大学(コンピューターサイエンス学部　コンピューターサイエンス学科)
+Hein Zayar Oo  
+日本工学院八王子専門学校（ITカレッジ 情報処理科）  
+東京工科大学（コンピューターサイエンス学部 コンピューターサイエンス学科）
 
 # Smart To-Do App（日本語版）
 
@@ -323,7 +325,7 @@ backend/
 
 ---
 
-### AI Productivity Coach
+### AIプロダクティビティコーチ
 Gemini AIを利用して以下を実現しています。
 
 - 今日および今後のタスク分析
@@ -408,7 +410,7 @@ FIREBASE_SERVICE_ACCOUNT_JSON=your_firebase_json
 ### 今日のスケジュール
 ![Today's Schedule](screenshots/Todayschedule.png)
 
-### AI Productivity Coach
+### AIプロダクティビティコーチ
 ![AI Advice](screenshots/AIadvicesection.png)
 
 ---
