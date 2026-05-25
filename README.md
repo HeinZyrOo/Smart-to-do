@@ -205,5 +205,7 @@ Through this project, I learned:
 
 ## Author
 
-yuji56  
-IT Student | Full-Stack & AI Development
+Hein Zayar Oo
+日本工学院八王子専門学校(ITカレッジ　情報処理科)
+東京工科大学(コンピューターサイエンス学部　コンピューターサイエンス学科)
+
