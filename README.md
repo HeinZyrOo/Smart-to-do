@@ -84,6 +84,7 @@ Users can:
 - Assign date and time
 - Mark tasks as complete/incomplete
 - Delete tasks
+
 The frontend communicates with the Flask backend using REST APIs.
 
 ### Smart Filtering
