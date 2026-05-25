@@ -402,16 +402,16 @@ FIREBASE_SERVICE_ACCOUNT_JSON=your_firebase_json
 ## スクリーンショット
 
 ### タスク追加フォーム
-![Add task form](screenshots/Addtaskform.png)
+![Add task form](screenshots/Addtaskform(jpn).png)
 
 ### タスクリスト
-![Task List](screenshots/Tasklist.png)
+![Task List](screenshots/Tasklist(jpn).png)
 
 ### 今日のスケジュール
-![Today's Schedule](screenshots/Todayschedule.png)
+![Today's Schedule](screenshots/Todayschedule(jpn).png)
 
 ### AIプロダクティビティコーチ
-![AI Advice](screenshots/AIadvicesection.png)
+![AI Advice](screenshots/Aiadvice(jpn).png)
 
 ---
 
