@@ -1,22 +1,11 @@
 import os
+import json
 from google import genai
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 import firebase_admin
 from firebase_admin import credentials, firestore
 
-'''
-app2.py
-
-
-
-System flow:
-Frontend → Flask backend → Firebase Firestore
-
-Frontend does NOT connect to Firebase directly.
-Frontend sends requests to Flask.
-Flask saves, reads, updates, and deletes data in Firebase.
-'''
 
 # Create Flask server
 app = Flask(__name__)
@@ -26,7 +15,16 @@ CORS(app)
 
 # Connect Flask backend to Firebase
 # serviceAccountKey.json must be inside the backend folder
-cred = credentials.Certificate("backend/serviceAccountKey.json")
+
+firebase_json = os.getenv("FIREBASE_SERVICE_ACCOUNT_JSON")
+
+if firebase_json is None:
+    raise ValueError("Firebase environment variable not found")
+
+firebase_dict = json.loads(firebase_json)
+
+cred = credentials.Certificate(firebase_dict)
+
 firebase_admin.initialize_app(cred)
 
 # Create Firestore database object
