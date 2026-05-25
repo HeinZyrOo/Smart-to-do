@@ -31,9 +31,8 @@ firebase_admin.initialize_app(cred)
 db = firestore.client()
 
 
-# ==============================
 # Gemini AI setup
-# ==============================
+
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
 # Create Gemini client
@@ -182,28 +181,12 @@ def ai_suggestions():
 if __name__ == "__main__":
     app.run(debug=True)
 
-'''
-REST API design pattern
-Frontend (HTML/JS)
-↓
-Send request (GET:show me tasks / POST:add task / DELETE:remove task / PUT:update task)
-↓
-Flask backend(app.py) receives request
-↓
-Process data
-↓
-Save / read / update / delete data in Firebase
-↓
-Return JSON:Data format between frontend and backend
-↓
-Frontend updates UI
-'''
-
 
 '''
+flow:
 1. User fills form → clicks "Add Task"
 2. app.js: addTask() reads form values
-3. app.js: fetch POST → http://127.0.0.1:5000/tasks
+3. app.js: fetch POST → http://127.0.0.1:5000/tasks or https://smart-to-do-svri.onrender.com/tasks
 4. app.py: add_task() receives JSON data
 5. app.py: saves to Firebase Firestore
 6. app.js: loadTasks() → fetch GET → /tasks

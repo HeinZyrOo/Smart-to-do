@@ -1,7 +1,7 @@
 let tasks = [];  //part is used to store app data.
 let currentFilter = "all"; 
 
-// Flask backend API URL
+
 // Frontend sends requests to Flask, and Flask connects to Firebase
 //const API_URL = "http://127.0.0.1:5000/tasks";
 //after render;
