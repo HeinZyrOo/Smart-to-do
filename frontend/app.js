@@ -3,9 +3,13 @@ let currentFilter = "all";
 
 // Flask backend API URL
 // Frontend sends requests to Flask, and Flask connects to Firebase
-const API_URL = "http://127.0.0.1:5000/tasks";
+//const API_URL = "http://127.0.0.1:5000/tasks";
+//after render;
+const API_URL = "https://smart-to-do-svri.onrender.com/tasks";
 // AI suggestion backend URL
-const AI_SUGGESTION_URL = "http://127.0.0.1:5000/ai-suggestions";
+//const AI_SUGGESTION_URL = "http://127.0.0.1:5000/ai-suggestions";
+//after render;
+const AI_SUGGESTION_URL = "https://smart-to-do-svri.onrender.com/ai-suggestions";
 
 const taskForm = document.getElementById("taskForm");  //the form where user writes a task
 const taskList = document.getElementById("taskList");  //the area where all tasks are shown
