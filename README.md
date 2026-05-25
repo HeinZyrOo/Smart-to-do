@@ -94,6 +94,7 @@ Users can filter tasks by:
 - High Priority
 - Medium Priority
 - Low Priority
+
 The filtering logic is implemented dynamically using JavaScript
 
 ### Today’s Schedule Dashboard
@@ -101,6 +102,7 @@ The app :
 - Detects today's tasks
 - Sorts tasks by date and time
 - Displays the current daily schedule
+
 This improves time management and task visibility for students.
 
 ### AI Productivity Coach
@@ -111,6 +113,8 @@ The app uses Gemini AI to:
 - Recommend study planning
 - Detect heavy workload
 - Help avoid burnout
+
+
 The backend sends task data to Gemini API using Flask
 
 ---
@@ -172,7 +176,16 @@ FIREBASE_SERVICE_ACCOUNT_JSON=your_firebase_json
 
 ## Screenshots
 ### Add task form
-![Add task form](screenshots/Add task form.png)
+![Add task form](screenshots/Addtaskform.png)
+
+### Task Lists
+![task List](screenshots/Tasklist.png)
+
+### Today's Schedule
+![Today's Schedule](screenshots/Todayschedule.png)
+
+### AI Productivity Coach
+![AI Advice](screenshots/AIadvicesection.png)
 
 ---
 
