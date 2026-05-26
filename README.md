@@ -134,7 +134,7 @@ Backend implementation is written using Flask REST API architecture.
 
 ---
 ## Security
-Sensitive information is protected using environment variables:
+Sensitive information is protected using environment variables:        
 -Gemini API Key
 -Firebase Service Account Credentials
 
