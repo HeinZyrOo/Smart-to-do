@@ -206,7 +206,7 @@ Through this project, I learned:
 ## Author
 
 Hein Zayar Oo  
-Nippon Engineering College of Hachioji (IT College, Information Processing Department)
+Nippon Engineering College of Hachioji (IT College, Information Processing Department)        
 Tokyo University of Technology (School of Computer Science, Department of Computer Science)
 
 # Smart To-Do App（日本語版）
