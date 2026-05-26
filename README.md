@@ -66,6 +66,7 @@ frontend/
 ├── index.html
 ├── style.css
 ├── app.js
+├── firebase.js
 
 backend/
 │
@@ -277,6 +278,7 @@ frontend/
 ├── index.html
 ├── style.css
 ├── app.js
+├── firebase.js
 
 backend/
 │
