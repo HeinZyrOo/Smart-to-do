@@ -206,8 +206,8 @@ Through this project, I learned:
 ## Author
 
 Hein Zayar Oo  
-日本工学院八王子専門学校（ITカレッジ 情報処理科）  
-東京工科大学（コンピューターサイエンス学部 コンピューターサイエンス学科）
+Nippon Engineering College of Hachioji (IT College, Information Processing Department)
+Tokyo University of Technology (School of Computer Science, Department of Computer Science)
 
 # Smart To-Do App（日本語版）
 
